@@ -1,4 +1,6 @@
-const now = new Date();
-date.format(now, 'HH:mm:ss');
+const time = () => {
+    const now = new Date();
+    console.log(`${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`)
+}
 
 module.exports = time;
