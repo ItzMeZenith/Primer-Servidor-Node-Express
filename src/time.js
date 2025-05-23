@@ -1,6 +1,7 @@
-const time = () => {
+const Time = () => {
     const now = new Date();
-    console.log(`${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`)
+    console.log(now.toLocaleTimeString())
+    return now.toLocaleTimeString();
 }
 
-module.exports = time;
+export default Time
